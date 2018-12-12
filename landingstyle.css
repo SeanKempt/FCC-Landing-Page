@@ -1,0 +1,163 @@
+body {
+	font-family: "roboto mono", monospace;
+	background-color:#1a1a1d;
+	
+}
+
+
+header {
+	background-color:#6f2232;
+	position: fixed;
+	display:flex;
+	align-items: center;
+	justify-content: space-around;
+	width: 100%;
+    height:175px;
+
+	
+}
+
+
+
+#header-img {
+	width:100%;
+	height:100%;
+	display: flex;
+	max-width:200px;
+	max-height:200px;
+	justify-content: center;
+
+}
+
+.nav {
+	color:#4e4e50;
+}
+
+nav {
+	color:#4e4e50;
+	font-size:20px;
+	font-weight: 700px;
+	float:right;
+
+	@media (max-width: 650px) {
+		width:100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
+}
+
+ul {
+	
+	width:35vw;
+	display: flex;
+	justify-content: center;
+	
+
+	@media (max-width:650px) {
+		flex-direction: column;
+		margin:0;
+	}
+}
+
+li {
+	padding-right: 70px;
+}
+
+
+#container {
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+#entry {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	margin-top: 300px;
+	height: 200px;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+
+}
+
+h2 {
+	color:#4e4e50;
+}
+
+input[type="email"] {
+	width: 100%;
+	max-width: 300px;
+	padding: 5px 5px;
+
+}
+
+input[type="submit"] {
+	width: 100%;
+	max-width:100px;
+	margin-top: 30px;
+	padding: 10px 10px;
+	border-radius: 10px;
+}
+
+i {
+	color:red;
+	font-size:60px;
+}
+
+#highlight {
+	display:flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.seperate {
+	display: flex;
+	justify-content: center;
+	margin-top:30px;
+}
+
+.icon {
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 20vw;
+	text-align: center;
+	align-self: center;
+	
+	
+}
+
+.info, .info2 {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	padding-left:50px;
+	
+
+}
+
+#container2 {
+	margin:0 auto;
+	max-width:1000px;
+	width: 100%;
+}
+
+#user {
+	margin-left: 199px;
+	padding-left:35px;
+}
+
+.info2 {
+	margin-left: 165px;
+}
