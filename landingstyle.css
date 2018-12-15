@@ -1,6 +1,7 @@
 body {
 	font-family: "roboto mono", monospace;
 	background-color:#222629;
+	margin:0;
 }
 	
 .container {
@@ -12,7 +13,7 @@ body {
 	grid-template-columns: repeat(4, 1fr);
 	grid-template-rows: 125px 500px 30px;
 	grid-gap:10px;
-	grid-row-gap:10px;
+	grid-row-gap:50px;
 }
 
 .logo {
@@ -77,6 +78,7 @@ body {
 input[type="email"] {
 	width:100%;
 	max-width: 300px;
+	margin-top:20px;
 	margin-bottom: 10px;
 	padding:5px;
 
@@ -91,20 +93,68 @@ input[type="submit"] {
 
 .wrapper {
 	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 50px 50px 50px;
 	grid-template-areas: 
-	"ic if"
-	"ic if"
-	"ic if";
-	grid-template-columns: 1fr, 1fr;
-	grid-template-rows: 30px 30px 30px;
+	"ica ifa"
+	"icb ifb"
+	"icc ifc";
+	margin-top: 100px;
+	grid-row-gap: 50px;
 }
 
-.icon {
-	grid-area:ic;
-	background-color:white;
+/* Remember for icon margin needs to be not set for it to be responsive @media query needs to be set for it to work
+needs to be for info as well since it applies to that too*/
+
+.icon,.icon2,.icon3 {
+	grid-area:ica;
+	display:flex;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+	font-size: 3em;
+	width:20vw;
+	height:125px;
+	margin-left:150px;
+	flex-direction:column;
 }
 
-.info {
-	grid-area:if;
+.icon2 {
+	grid-area:icb;
 }
+
+.icon3 {
+	grid-area:icc;
+}
+
+
+
+.info, .info2, .info3 {
+	grid-area: ifa;
+	display:flex;
+	justify-content: center;
+	flex-direction: column;
+	text-align: left;
+	width:80vw;
+	height:125px;
+}
+
+.info2 {
+	grid-area:ifb;
+}
+
+.info3 {
+	grid-area:ifc;
+}
+
+p{
+	display:block;
+	margin:0;
+}
+
+h2 {
+	display:block;
+	margin:0;
+}
+
 
