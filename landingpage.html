@@ -4,56 +4,45 @@
 	<title>IT-ER</title>
 	<link rel="stylesheet" type="text/css" href="landingstyle.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,700" rel="stylesheet">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
 
 </head>
 <body>
+<div class="container">
+
 	<header id="header">
-	<div id="logo-box">
-		<img id="header-img" src="https://i.imgur.com/AxrdcSc.png"/>
-	</div>		
+	<div class="logo-box">
+	<span class="logo">
+		<i class="fas fa-desktop"></i>
+	</span>
+	Computer ER
+	</div>
+
 
 	<nav id="nav-bar">
 		<ul style="list-style: none;" id="nav-box">
-			<li><a class="nav" href="#aboutus">About Us</a></li>
-			<li><a class="nav" href="#how it works">How It Works</a></li>
-			<li><a class="nav" href="pricing">Pricing</a></li>
+			<li><a class="nav-link" href="#aboutus">About Us</a></li>
+			<li><a class="nav-link" href="#how it works">How It Works</a></li>
+			<li><a class="nav-link" href="pricing">Pricing</a></li>
 		</ul>
 	</nav>
 	</header>
-
-	<div id="container">
+	<div class="content">
+		<h2>Emergency tech repair, fast and reliable</h2>
+		<form id="form" action="https://www.freecodecamp.com/email-submit">
+			<input type="email" name="email" id="email" placeholder="Enter your e-mail" required>
+			<input type="submit" name="submit" id="submit">
+		</form>
+	<div class="wrapper">
+		<div class="icon"></div>
+		<div class="info"></div>
+	</div>
+	</div>
+	<div class="footer">
 	</div>
 
-	<section id="entry">
-		<h2>Get the help your tech needs</h2>
-		<form id="form">
-			<input type="email" name="email" placeholder="Enter your email" required>
-			<input type="submit" name="submit" value="Get more info" class="btn">
-		</form>
-	</section>
+</div>
 
-	<div id="container2">
-		<section id="highlight">
-			<div class="seperate">
-				<div class="icon">
-					<i class="glyphicon glyphicon-cloud"></i>
-				</div>
-				<div class="info">
-					<h2>Your request is received</h2>
-					<p>Once you send in your request for repair, we dispatch a technican.</p>
-				</div>
-			</div>
-			<div class="seperate">
-				<div class="icon">
-					<i id="user" class="glyphicon glyphicon-user"></i>
-				</div>
-				<div class="info2">
-					<h2>The technican arrives</h2>
-					<p>Once the technican arrives, they shall quickly diagnosis the problem, and immediately begin repairing the issue on site.</p>
-				</div>
-			</div>
-
-
+	
 </body>
 </html>
