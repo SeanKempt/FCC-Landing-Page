@@ -1,3 +1,6 @@
+* {
+	margin:0;
+}
 body {
 	font-family: "roboto mono", monospace;
 	background-color:#222629;
@@ -11,9 +14,10 @@ body {
 	"c c c c"
 	"f f f f";
 	grid-template-columns: repeat(4, 1fr);
-	grid-template-rows: 125px 500px 30px;
+	grid-template-rows: 125px auto 50px;
 	grid-gap:10px;
 	grid-row-gap:50px;
+	width:100%;
 }
 
 .logo {
@@ -30,6 +34,7 @@ body {
 	text-align:center;
 	font-size:2em;
 	color:#ffffff;
+	margin-left: 125px;
 
 }
 
@@ -56,8 +61,12 @@ body {
 .footer {
 	grid-area:f;
 	background-color:blue;
-}
+	display:flex;
+	justify-content:flex-end;
+	flex-direction: row;
 
+}
+/* media query and set nav bar to column instead at lowest device */
 #header {
 	grid-area:h;
 	display:grid;
@@ -65,6 +74,7 @@ body {
 	"l n";
 	grid-template-columns:20% 80%;
 	grid-template-rows: 125px;
+	width:100%
 
 }
 
@@ -117,6 +127,7 @@ needs to be for info as well since it applies to that too*/
 	height:125px;
 	margin-left:150px;
 	flex-direction:column;
+	color:#FFFFFF;
 }
 
 .icon2 {
@@ -150,11 +161,80 @@ needs to be for info as well since it applies to that too*/
 p{
 	display:block;
 	margin:0;
+	color:#6b6e70;
 }
 
 h2 {
 	display:block;
 	margin:0;
+	color:#86c232;
+}
+
+iframe {
+	width:100%;
+	max-width: 709px;
+}
+
+.showcase {
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	margin-top:100px;
+}
+
+.pricing {
+
+  margin-top: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.space {
+	background-color: #ddd;
+      color: black;
+      padding: 15px 0;
+      width: 100%;
+      text-transform: uppercase;
+      font-weight: 700;
+      margin-bottom: 10px;
+      text-align: center;
+}
+
+ .diag, .parts, .osite {
+ 	color:#6b6e70;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: calc(100%  / 3);
+    margin: 15px 20px;
+    border: 1px solid #000;
+    border-radius: 5px;
+ }
+
+ ol {
+ 	list-style: none;
+ 	margin:20px 30px;
+ 	text-align: center;
+ }
+
+ ul{
+ 	list-style: none;
+ }
+
+li {
+	padding:5px 0;
+}
+
+.link2 {
+
 }
 
 
+  @media (max-width: 800px) {
+    flex-direction: column;
+    
+    .diag, .parts, .osite { max-width: 300px; width: 100%; margin: 0 auto; margin-bottom: 10px; }
+    }
